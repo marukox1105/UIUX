@@ -1,281 +1,313 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>彙整: 2024 | 丸子的部落格</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="這是關於美感與職涯的分享網站">
-<meta property="og:type" content="website">
-<meta property="og:title" content="丸子的部落格">
-<meta property="og:url" content="https://marukox1105.github.io/UIUX/archives/2024/index.html">
-<meta property="og:site_name" content="丸子的部落格">
-<meta property="og:description" content="這是關於美感與職涯的分享網站">
-<meta property="og:locale" content="zh_TW">
-<meta property="article:author" content="maruko">
-<meta property="article:tag" content="設計,美感,UIUX,PM">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/UIUX/atom.xml" title="丸子的部落格" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/UIUX/favicon.png">
-  
-  
-  
-<link rel="stylesheet" href="/UIUX/css/style.css">
+    <meta charset="utf-8" />
+    <title>Archives | 丸子的部落格</title>
+    <meta name="author" content="maruko" />
+    <meta name="description" content="這是關於美感與職涯的分享網站" />
+    <meta name="keywords" content="設計,美感,UIUX,PM" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <link rel="icon" href="/UIUX/images/avatar.jpg" />
+    <link rel="preconnect" href="https://s4.zstatic.net" />
+<script src="https://s4.zstatic.net/ajax/libs/vue/3.3.7/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://s4.zstatic.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.cn" />
+<link rel="preconnect" href="https://fonts.gstatic.cn" crossorigin />
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.cn/css2?family=Fira+Code:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;600;700;800;900&display=swap"
+/>
+<script> const mixins = {}; </script>
 
-  
-    
-<link rel="stylesheet" href="/UIUX/fancybox/jquery.fancybox.min.css">
+<script src="https://polyfill.alicdn.com/v3/polyfill.min.js?features=default"></script>
 
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<script src="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://s4.zstatic.net/ajax/libs/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://s4.zstatic.net/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+/>
+<script src="/UIUX/js/lib/highlight.js"></script>
+
+
+
+<script src="/UIUX/js/lib/preview.js"></script>
+
+
+
+
+
+<link rel="stylesheet" href="/UIUX/css/main.css" />
 
 <meta name="generator" content="Hexo 7.2.0"></head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/UIUX/" id="logo">丸子的部落格</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/UIUX/" id="subtitle">這是丸子展示設計的網站</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+    <div id="layout">
+        <transition name="fade">
+            <div id="loading" v-show="loading">
+                <div id="loading-circle">
+                    <h2>LOADING</h2>
+                    <p>加载过慢请开启缓存 浏览器默认开启</p>
+                    <img src="/UIUX/images/loading.gif" />
+                </div>
+            </div>
+        </transition>
+        <div id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <nav id="desktop-menu">
+        <a class="title" href="/UIUX/">
+            <span>丸子的部落格</span>
+        </a>
         
-          <a class="main-nav-link" href="/UIUX/">首頁</a>
+        <a href="/UIUX/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
         
-          <a class="main-nav-link" href="/UIUX/archives">部落格</a>
+        <a href="/UIUX/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
         
-          <a class="main-nav-link" href="/UIUX/about">關於我</a>
+        <a href="/UIUX/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
         
-      </nav>
-      <nav id="sub-nav">
+        <a href="/UIUX/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
         
+        <a href="/UIUX/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
         
-          <a class="nav-icon" href="/UIUX/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="搜尋"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜尋"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://marukox1105.github.io/UIUX"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/UIUX/archives/2024" class="archive-year">2024</a>
+    </nav>
+    <nav id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;丸子的部落格</span>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/UIUX/2024/05/06/maruko789/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-05-05T16:04:18.000Z" itemprop="datePublished">5月 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/UIUX/2024/05/06/maruko789/">maruko789</a>
-    </h1>
-  
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/UIUX/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/UIUX/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/UIUX/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/UIUX/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/UIUX/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </nav>
+</div>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
 
-    </header>
-  </div>
-</article>
-  
+        <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            
+<div id="archives">
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/UIUX/2024/05/06/maruko456/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-05-05T16:03:58.000Z" itemprop="datePublished">5月 6</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/UIUX/2024/05/06/maruko456/">maruko456</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/UIUX/2024/05/05/maruko123/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-05-05T15:36:07.000Z" itemprop="datePublished">5月 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/UIUX/2024/05/05/maruko123/">玩丸部落格</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/UIUX/2024/05/05/hello-world/" class="archive-article-date">
-  <time class="dt-published" datetime="2024-05-05T09:06:24.428Z" itemprop="datePublished">5月 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/UIUX/2024/05/05/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-</section>
+    <div id="timeline-wrap" ref="timeline">
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">標籤</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/UIUX/tags/tag1/" rel="tag">tag1</a></li><li class="tag-list-item"><a class="tag-list-link" href="/UIUX/tags/tage2/" rel="tag">tage2</a></li><li class="tag-list-item"><a class="tag-list-link" href="/UIUX/tags/%E6%97%A5%E8%A8%98/" rel="tag">日記</a></li></ul>
+        <div class="timeline" data-title="helloworld">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/5/5</div>
+                <a href="/UIUX/2024/05/05/hello-world/">
+                    <h3>Hello World</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="玩丸部落格">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/5/5</div>
+                <a href="/UIUX/2024/05/05/maruko123/">
+                    <h3>玩丸部落格</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/UIUX/tags/%E6%97%A5%E8%A8%98/" style="color: #00bcd4">
+                                日記
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="maruko456">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/5/6</div>
+                <a href="/UIUX/2024/05/06/maruko456/">
+                    <h3>maruko456</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/UIUX/tags/tage2/" style="color: #00a596">
+                                tage2
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/UIUX/tags/%E6%97%A5%E8%A8%98/" style="color: #ff7d73">
+                                日記
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/UIUX/tags/tag1/" style="color: #ffa2c4">
+                                tag1
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="timeline" data-title="maruko789">
+            <div class="timeline-tail"></div>
+            <div class="timeline-content">
+                <div class="item-time">2024/5/6</div>
+                <a href="/UIUX/2024/05/06/maruko789/">
+                    <h3>maruko789</h3>
+                </a>
+                <div class="info">
+                    
+                    
+                    <span class="tags">
+                        <span class="icon">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </span>
+                        
+                        
+                        <span class="tag">
+                            
+                            <a href="/UIUX/tags/tage2/" style="color: #03a9f4">
+                                tage2
+                            </a>
+                        </span>
+                        
+                        <span class="tag">
+                            
+                            <a href="/UIUX/tags/%E6%97%A5%E8%A8%98/" style="color: #ffa2c4">
+                                日記
+                            </a>
+                        </span>
+                        
+                    </span>
+                    
+                </div>
+            </div>
+        </div>
+        
     </div>
-  </div>
+</div>
 
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">標籤雲</h3>
-    <div class="widget tagcloud">
-      <a href="/UIUX/tags/tag1/" style="font-size: 10px;">tag1</a> <a href="/UIUX/tags/tage2/" style="font-size: 15px;">tage2</a> <a href="/UIUX/tags/%E6%97%A5%E8%A8%98/" style="font-size: 20px;">日記</a>
+            <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2024 丸子的部落格
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;maruko
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/theme-particlex/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
     </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">彙整</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/UIUX/archives/2024/05/">五月 2024</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/UIUX/2024/05/06/maruko789/">maruko789</a>
-          </li>
-        
-          <li>
-            <a href="/UIUX/2024/05/06/maruko456/">maruko456</a>
-          </li>
-        
-          <li>
-            <a href="/UIUX/2024/05/05/maruko123/">玩丸部落格</a>
-          </li>
-        
-          <li>
-            <a href="/UIUX/2024/05/05/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2024 maruko<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
 
+        </div>
+        
+        <transition name="fade">
+            <div id="preview" ref="preview" v-show="previewShow">
+                <img id="preview-content" ref="previewContent" />
+            </div>
+        </transition>
+        
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/UIUX/" class="mobile-nav-link">首頁</a>
-  
-    <a href="/UIUX/archives" class="mobile-nav-link">部落格</a>
-  
-    <a href="/UIUX/about" class="mobile-nav-link">關於我</a>
-  
-</nav>
+    <script src="/UIUX/js/main.js"></script>
     
-
-
-<script src="/UIUX/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/UIUX/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/UIUX/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
 </html>
